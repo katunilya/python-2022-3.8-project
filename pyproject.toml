@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "python-2022-3-8-project"
+version = "0.1.0"
+description = ""
+authors = ["Katun Ilya <katun.ilya@gmail.com>"]
+readme = "README.md"
+packages = [{include = "python_2022_3"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[tool.poetry.group.dev.dependencies]
+yastyleguide = "^0.1.1"
+pytest = "^7.2.1"
+pre-commit = "^2.21.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.nitpick]
+style = "https://raw.githubusercontent.com/levkovalenko/yastyleguide/master/styles/nitpick-yastyle.toml"
