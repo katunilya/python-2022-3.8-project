@@ -148,3 +148,4 @@ cython_debug/
 
 # for test purposes
 archive.zip
+**/*.csv
