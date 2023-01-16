@@ -4,10 +4,16 @@ version = "0.1.0"
 description = ""
 authors = ["Katun Ilya <katun.ilya@gmail.com>"]
 readme = "README.md"
-packages = [{include = "python_2022_3"}]
+packages = [{include = "app"}]
+
+[tool.poetry.scripts]
+weather = "app.cli:cli"
 
 [tool.poetry.dependencies]
 python = "^3.10"
+typer = {extras = ["all"], version = "^0.7.0"}
+pandas = "^1.5.2"
+toolz = "^0.12.0"
 
 
 [tool.poetry.group.dev.dependencies]
