@@ -17,7 +17,7 @@ cli = typer.Typer(
 @cli.command()
 def run(
     cmd: str = typer.Argument(default="mean"),  # noqa
-    source: Optional[pathlib.Path] = typer.Argument(None),  # noqa
+    source: Optional[pathlib.Path] = typer.Option(None),  # noqa
     city: Optional[str] = typer.Option(None),  # noqa
     country: Optional[str] = typer.Option(None),  # noqa
     from_date: Optional[datetime] = typer.Option(None),  # noqa
